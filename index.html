@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking app</title>
+</head>
+<body>
+<label>Recipe name </label>
+<input id="name-input" type="text">
+<div>
+    <label>Select day</label>
+    <select id="day-select">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+    </select>
+</div>
+<div>
+    <label>Select type</label>
+    <select id="type-select">
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+    </select>
+</div>
+<h2>Available Ingredients</h2>
+<ul id="ingredients">
+    <!-- Populate dynamically -->
+</ul>
+
+<h2>Chosen Ingredients</h2>
+<ul id="chosenIngredients">
+    <!-- Populate dynamically -->
+</ul>
+
+<div>
+    <label>Add calories</label>
+    <input id="kcal-input" type="number"> kcal
+</div>
+<button onclick="addRecipe()">Add new recipe</button>
+
+<div id="dataContainer"></div>
+<script src="index.js"></script>
+</body>
+</html>
